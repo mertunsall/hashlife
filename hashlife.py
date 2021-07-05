@@ -9,8 +9,7 @@ Created on Sun May  2 23:42:14 2021
 AbstractNode.forward
 
 The test creates a quadtree from the input universe (m, n, data)
-and .forward() it. The returned node is compared to the one
-returned by the reference implementation.
+and .forward() it. 
 
 If you want to replay the test on your computer, you can do
 the following:
@@ -22,10 +21,6 @@ node = HashLifeUniverse(*data).root
 for _ in range(n):
     node = node.extend()
 node = node.forward()
-
-where HashLifeUniverse is given in the project subject - you
-can use it as-is even if you haven't completed the missing
-methods.
 
 '''
 import math
